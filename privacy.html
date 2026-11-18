@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Política de privacidad | NOVA</title>
+  <style>
+    :root { color-scheme: light; --ink:#18212f; --muted:#596579; --line:#e5e9ef; --accent:#243b63; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#f6f8fb; color:var(--ink); font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+    main { max-width:850px; margin:48px auto; padding:44px 48px; background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 32px rgba(20,35,60,.05); }
+    h1,h2 { line-height:1.25; letter-spacing:-.02em; }
+    h1 { font-size:2.15rem; margin:.2rem 0 .4rem; }
+    h2 { font-size:1.2rem; margin:2rem 0 .55rem; }
+    p,li { color:#293548; }
+    .eyebrow { color:var(--accent); font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    .muted { color:var(--muted); font-size:.92rem; }
+    a { color:#1f568f; }
+    footer { margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+    @media(max-width:640px) { main { margin:0; padding:28px 22px; border:0; border-radius:0; } h1{font-size:1.8rem;} }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">NOVA · Información legal</div>
+  <h1>Política de privacidad</h1>
+  <p class="muted">Última actualización: 17 de noviembre de 2026</p>
+
+  <p>Esta política explica cómo NOVA trata los datos personales cuando una persona utiliza NOVA Internal, una herramienta local de apoyo a la estrategia, preparación y gestión de contenidos profesionales. NOVA es un proyecto operado desde Argentina por una persona física. No es un producto de LinkedIn ni está afiliado, patrocinado o avalado por LinkedIn.</p>
+
+  <h2>1. Responsable y contacto</h2>
+  <p>El responsable del tratamiento es el titular y operador de NOVA, con base en Argentina. Para consultas sobre privacidad, acceso, rectificación o eliminación de datos, escribí a <a href="mailto:federicolgiliberti@gmail.com">federicolgiliberti@gmail.com</a>.</p>
+
+  <h2>2. Datos que puede tratar NOVA</h2>
+  <ul>
+    <li><strong>Datos de conexión con LinkedIn:</strong> identificador técnico de la cuenta y los datos básicos de perfil que LinkedIn entregue a través de OpenID Connect, cuando la persona autorice la conexión.</li>
+    <li><strong>Credenciales de autorización:</strong> tokens de acceso y, únicamente si LinkedIn los entrega, tokens de renovación. NOVA no solicita ni almacena la contraseña de LinkedIn.</li>
+    <li><strong>Datos operativos:</strong> estado de la conexión, fechas y eventos técnicos de conexión o desconexión. Los registros de auditoría no incluyen los blobs de tokens.</li>
+    <li><strong>Contenido introducido en NOVA:</strong> borradores, textos, aprobaciones y metadatos de planificación que el usuario decida guardar en la herramienta.</li>
+  </ul>
+  <p>NOVA no solicita acceso a mensajes privados, contactos, red de conexiones ni publicaciones existentes del usuario mediante los permisos descritos para la integración inicial. NOVA no solicita el correo electrónico de LinkedIn como dato de perfil en el flujo OpenID Connect actualmente previsto.</p>
+
+  <h2>3. Finalidades</h2>
+  <p>Los datos se utilizan para autenticar al usuario, identificar la cuenta de LinkedIn que decidió conectar, mantener de forma segura el estado de esa conexión y permitir el funcionamiento de las herramientas locales de gestión de contenidos. NOVA no vende datos personales ni utiliza datos obtenidos de LinkedIn para publicidad dirigida.</p>
+  <p><strong>Estado actual de la integración:</strong> la conexión OAuth está implementada en NOVA, pero la integración todavía no fue activada por el usuario y no se encuentra habilitada la publicación de contenido mediante la API de LinkedIn. Cualquier función futura de publicación quedará sujeta a las reglas y autorizaciones aplicables de LinkedIn, y requerirá una actualización de esta política cuando cambie materialmente el tratamiento de datos.</p>
+
+  <h2>4. Almacenamiento y seguridad</h2>
+  <p>NOVA Internal funciona localmente en una computadora Windows. La base de datos se ejecuta en la misma computadora y la aplicación escucha en la interfaz local; esta versión no utiliza una base de datos centralizada en la nube para almacenar los datos de la integración.</p>
+  <p>Los tokens de LinkedIn se protegen mediante Windows DPAPI en el ámbito del usuario actual de Windows y se almacenan cifrados en la base local. La protección está vinculada a ese usuario y a esa computadora. Los códigos y estados temporales del flujo OAuth tienen una duración limitada y no deben aparecer en los registros de la aplicación. Las copias de seguridad locales se generan cifradas.</p>
+  <p>Ninguna medida de seguridad elimina todos los riesgos. El usuario debe proteger su cuenta de Windows, mantener el sistema actualizado y evitar compartir el acceso a la computadora o a los archivos de la aplicación.</p>
+
+  <h2>5. Comunicaciones y terceros</h2>
+  <p>Para autenticar una cuenta, NOVA intercambia la información necesaria con LinkedIn mediante sus endpoints oficiales de autorización, token y OpenID Connect. LinkedIn trata los datos recibidos de acuerdo con sus propias condiciones y políticas. NOVA no comparte, vende ni alquila los datos de LinkedIn a otros terceros.</p>
+  <p>El sitio que aloje esta política puede generar sus propios registros técnicos de acceso sujetos a las condiciones del proveedor de alojamiento. Esos registros pertenecen al servicio de alojamiento y no forman parte de la base de datos local de NOVA.</p>
+
+  <h2>6. Conservación y eliminación</h2>
+  <p>Los datos de conexión se conservan mientras la cuenta permanezca conectada y sean necesarios para operar la integración. Al desconectar LinkedIn desde NOVA, se eliminan localmente los tokens guardados. NOVA puede conservar un registro operativo mínimo de que la conexión fue creada, modificada o desconectada, sin incluir tokens ni secretos.</p>
+  <p>Para solicitar acceso, corrección o eliminación de los datos personales tratados por NOVA, escribí a <a href="mailto:federicolgiliberti@gmail.com">federicolgiliberti@gmail.com</a>. La desconexión en NOVA elimina las credenciales locales, pero no necesariamente revoca la autorización registrada por LinkedIn. Para revocar también el permiso del lado de LinkedIn, el usuario debe hacerlo desde la configuración de aplicaciones autorizadas de su cuenta.</p>
+
+  <h2>7. Derechos de las personas</h2>
+  <p>Las personas pueden solicitar información sobre sus datos y pedir su actualización, rectificación o supresión, de acuerdo con la Ley argentina 25.326 y las normas aplicables. También pueden presentar un reclamo ante la Agencia de Acceso a la Información Pública (AAIP), autoridad de control en materia de protección de datos personales en Argentina: <a href="https://www.argentina.gob.ar/aaip">argentina.gob.ar/aaip</a>.</p>
+
+  <h2>8. Transferencias internacionales</h2>
+  <p>Cuando el usuario se conecta a LinkedIn, la información necesaria para la autenticación se transmite a LinkedIn, que puede procesarla en otros países conforme a sus propias políticas y obligaciones legales. NOVA no controla la infraestructura ni las prácticas de privacidad de LinkedIn.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Esta política podrá actualizarse cuando cambien las funciones de NOVA, los datos tratados o las obligaciones legales. La fecha de última actualización se indicará al comienzo. Cuando un cambio afecte materialmente el alcance del tratamiento, se informará al usuario y se solicitará el consentimiento que corresponda antes de aplicar ese cambio.</p>
+
+  <footer>Contacto de privacidad: <a href="mailto:federicolgiliberti@gmail.com">federicolgiliberti@gmail.com</a></footer>
+</main>
+</body>
+</html>
